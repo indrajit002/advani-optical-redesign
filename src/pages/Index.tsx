@@ -10,12 +10,10 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import StoreShowcase from "@/components/StoreShowcase";
 import ExperienceExcellence from "@/components/ExperienceExcellence";
 import NewsletterSection from "@/components/NewsletterSection";
-import DiscountWheel from "@/components/DiscountWheel";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <DiscountWheel />
       <Header />
       <main>
         <HeroSection />
