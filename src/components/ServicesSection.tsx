@@ -2,6 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Eye, Glasses, Phone } from "lucide-react";
+import opticalTitanium from "@/assets/products/optical-titanium.jpg";
+import storeInterior from "@/assets/store-interior.jpg";
+import contactLens from "@/assets/contact_lence.png";
 
 const ServicesSection = () => {
   const services = [
@@ -11,7 +14,7 @@ const ServicesSection = () => {
       description: "Premium prescription eyewear with unmatched expertise. Choose from top global brands like Gucci, Prada, Burberry, paired with best-in-class lenses.",
       link: "/collections/all",
       cta: "Explore More",
-      image: "/api/placeholder/600/400",
+      image: opticalTitanium,
     },
     {
       icon: <Eye className="h-8 w-8" />,
@@ -19,15 +22,15 @@ const ServicesSection = () => {
       description: "State-of-the-art Visioffice® technology ensures perfect vision. Advanced system crafts lenses tailored to your unique needs.",
       link: "/appointments",
       cta: "Book Now",
-      image: "/api/placeholder/600/400",
+      image: storeInterior,
     },
     {
-      icon: <Phone className="h-8 w-8" />,
+      icon: <Glasses className="h-8 w-8" />,
       title: "Contact Lenses",
       description: "Personalized consultations for perfect fit. Choose from Acuvue, Bausch + Lomb, Alcon, CooperVision, and more top brands.",
       link: "/contact-lenses",
       cta: "Shop Now",
-      image: "/api/placeholder/600/400",
+      image: contactLens,
     },
   ];
 
