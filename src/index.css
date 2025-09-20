@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Header discount animation */
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  min-width: 100%;
+  animation: marquee 30s linear infinite;
+}
+
+
 /* Premium Optical Design System - Sophisticated & Luxurious */
 
 @layer base {

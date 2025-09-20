@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Badge } from "@/components/ui/badge";
 import CartSheet from "@/components/CartSheet";
+import "@/index.css"; // Ensure global styles are imported
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,9 +32,43 @@ const Header = () => {
   return (
     <>
       {/* Announcement Bar */}
-      <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-medium">
-        <p className="animate-fade-in">15% OFF SITEWIDE! USE CODE - 'FLAT15'</p>
+      <div className="h-[40px] bg-[#775647] flex items-center overflow-hidden relative">
+      <div className="whitespace-nowrap animate-marquee">
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          NOW TRENDING! RAYBAN META GLASSES - BOOK YOUR PAIR NOW!
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          |
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          15% OFF SITEWIDE! USE CODE - 'FLAT15'
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          |
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          NOW TRENDING! RAYBAN META GLASSES - BOOK YOUR PAIR NOW!
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          |
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          15% OFF SITEWIDE! USE CODE - 'FLAT15'
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          |
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          NOW TRENDING! RAYBAN META GLASSES - BOOK YOUR PAIR NOW!
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          |
+        </h1>
+        <h1 className="text-white text-[14px] font-medium px-8 inline-block">
+          15% OFF SITEWIDE! USE CODE - 'FLAT15'
+        </h1>
       </div>
+    </div>
 
       {/* Main Header */}
       <header
@@ -51,12 +86,12 @@ const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-12">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-accent ${
+                  className={`text-[16px] transition-colors hover:text-accent ${
                     item.special ? "text-accent" : "text-foreground"
                   }`}
                 >
